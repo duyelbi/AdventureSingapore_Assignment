@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+
+/* heder-top */
+.topNav-for-mobile{
+    overflow: hidden;
+    background-color: #002776;
+    background-image: url(image/background-header-top-mobile.png);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.topNav-for-mobile a{
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.topNav-for-mobile a.icon{
+    float: right;
+}
+
+.line-header-top{
+    height: 4px;
+    background-color: #ff9f00;
+}
+/* end header-top */
+
+/* header bottom */
+.header-bottom-for-mobile{
+    overflow: hidden;
+    background-image: url(image/background-header-bottom-mobile.png);
+    /* background-size: cover; */
+    /* max-width: 100%; */
+    /* background-position: center; */
+
+    background-size: 100% 100%;
+    background-position: center center;
+    position: relative;
+}
+.content-header{
+    float: left;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 63px;
+    display: block;
+}
+.content-header a{
+    float: left;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+}
+.content-header a img{
+    max-width: 100%;
+    margin: auto;
+}
+.content-header a.text-header-botom{
+    padding-top: 43px;
+    padding-bottom: 50px;
+}
+/* end header bottom */
+/* end header */
+
+/* tabs */
+/* Style tab links */
+.tablinks{
+    /* width: 580px; */
+    /* height: 60px; */
+    margin: auto;
+    float: center;
+    text-align: center;
+    max-width: 100%;
+}
+.tablink {
+    margin: 0;
+    background-color: #e2e1dd;
+    color: #3d3d3d;
+    border: 2px solid #8b9abd;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    text-align: center;
+}
+  
+.tablink:hover {
+    background-color: #777;
+}
+  
+  /* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: #fff;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+  
+#Basic-Information {
+    background-color: #f5f5f5;
+    color: #3d3d3d;
+    border-top: 2px solid #1e4ede !important;
+}
+#Recommended-Imformation {
+    background-color: #f5f5f5;
+    color: #3d3d3d;
+    border-top: 2px solid #1e4ede;
+}
+#Useful-Information {
+    background-color: #f5f5f5;
+    color: #3d3d3d;
+    border-top: 2px solid #1e4ede;
+}
+/* content-top */
+.content-top img{
+    max-width: 100%;
+}
+/* end content-top */
+
+.Ensign-singapore{
+    padding-top: 50px;
+    margin: auto;
+    /* vertical-align: middle; */
+    text-align: center;
+    float: center;
+    display: block;
+}
+.Ensign-singapore a{
+    display: block;
+    text-decoration: none;
+}
+
+/* info */
+.info{
+    margin: auto;
+    /* border: 10px solid #ddd; */
+    /* display: table-cell; */
+    vertical-align: middle;
+    text-align: center;
+    float: center;
+}
+.info a{
+   display: inline-block;
+   padding-top: 70px;
+}
+/* end info */
+
+/* table */
+.table{
+    margin-top: 76px;
+    padding-bottom: 60px;
+    border-top: 4px solid #c3c3c3;
+    background-color: #ffffff;
+}
+table{
+    width: 100%;
+    /* border-top:  */
+    border-spacing: 2px;
+}
+
+.table th,
+.table td{
+    border-top: 2px solid #dedede;
+    padding: 20px 0px 20px 0px;
+}
+.table th{
+    padding: 0 60px 0 50px;
+    border-right: 2px solid #dedede;
+}
+.table td{
+    padding-left: 20px;
+}
+/* end table */
+/* end tabs */
+
+/* footer */
+.footer-for-mobile{
+    height: 278px;
+    background-image: url(image/footer-mobile.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    position: relative;
+}
+/* end footer */
+
+/* display none for mobile */
+.icon-header-top{
+    display: none;
+}
+/* end display none for mobile */
+
+@media only screen and (min-width: 640px){
+    .width960{
+        width: 960px;
+        margin: auto;
+    }
+    /* header */
+    .topNav-for-mobile{
+        overflow: hidden;
+        background-color: #002776;
+        background-image: url(image/background-header-top.png);
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+    }
+    .icon-header-top{
+        display: inherit;
+        float: right;
+    }
+    .icon{
+        display: none;
+    }
+    
+    /* end header */
+
+    /* footer */
+    .footer-for-mobile{
+        display: none;
+    }
+    .footer-for-web{
+        height: 215px;
+        background-image: url(image/footer.png);
+        background-size: 100% 100%;
+        background-position: center;
+        position: relative;
+    }
+    /* end footer */
+}
+  

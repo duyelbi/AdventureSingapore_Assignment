@@ -1,0 +1,25 @@
+﻿과제 요구사항 (Assignment requirements)
+
+1. HTML 파일과 CSS 파일을 분리해서 제작
+   (Create HTML file and CSS file separately.)
+
+2. HTML5 문법을 사용한 코드 작성 
+   (Writing code using HTML5 syntax)
+
+3. 프레임워크(e.g. Bootstrap) 사용하지 않고 HTML, CSS로만 제작
+   (Produce only HTML and CSS without using a framework (eg Bootstrap))
+
+4. 반응형 웹
+   (Responsive Web)
+
+4. 브라우저 지원 범위 (Cross-browser compatibility)
+   : Internet Explorer 9+, Chrome lastest, Firefox lastest
+
+5. 첨부 파일 (Attachments)
+   : 포토샵 디자인 파일 (Photoshop Design File)
+   : JPG 디자인 파일 (JPG Design file)
+   
+8. 포토샵이 없다면 아래 사이트에서 PSD 파일을 열여서 확인 할 수 있음
+   (If you don't have Photoshop, you can open and view the PSD file at the following site.)
+   : https://www.photopea.com
+   : https://www.gimp.org

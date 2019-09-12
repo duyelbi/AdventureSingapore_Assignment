@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Singapore Utimate Adventure</title>
+    <link rel="stylesheet" type="text/css" href="Singapore-Utimate-Adventure.css">
+    <script type="text/javascript" src="Singapore-Utimate-Adventure.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <!-- heder-top -->
+        <div class="topNav-for-mobile">
+            <div class="width960">
+                <a href="#home"><img src="image/icon/slowgan.png" alt=""></a>
+
+                <div class="icon-header-top">
+                    <a href=""><img src="image/icon/icon-header-1.png" alt=""></a>
+                    <h5>Singapore and</h5>
+                    <h3>Get to know</h3>
+
+                    <a href=""><img src="image/icon/icon-header-2-2.png" alt=""></a>
+                    <a href=""><img src="image/icon/icon-header-3-2.png" alt=""></a>
+                </div>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="image/icon/icon-dropdow-menu.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="line-header-top"></div>
+        <!-- end header-top -->
+
+        <!-- heder-bottom -->
+        <div class="header-bottom-for-mobile">
+            <div class="content-header">
+                <a href=""><img src="image/text-png/text-header-1.png" alt=""></a>
+                <a href=""><img src="image/text-png/text-header-2.png" alt=""></a>
+
+                <a class="text-header-botom" href=""><img src="image/text-png/text-header-3.png" alt=""></a>
+            </div>
+            <div class="tablinks">
+                <button class="tablink" onclick="openPage('Basic-Information', this, '#f5f5f5')"
+                    id="defaultOpen">Basic</button>
+                <button class="tablink"
+                    onclick="openPage('Recommended-Imformation', this, '#f5f5f5')">Recommended</button>
+                <button class="tablink" onclick="openPage('Useful-Information', this, '#f5f5f5')"> Useful</button>
+            </div>
+        </div>
+        <!-- end hedaer bootom -->
+    </div>
+    <!-- end header -->
+
+    <!-- tabs -->
+    <div class="tabs">
+        <div id="Basic-Information" class="tabcontent">
+            <div class="content-top">
+                <a href="">
+                    <img src="image/text-png/text-Welcome-to.png" alt=""><br>
+                    <img src="image/text-png/text-Singapore.png" alt="">
+                </a>
+                <h3>
+                    Singapore, a vibrant international city with a world-class living <br>
+                    environment with grievances and gardens!<br>
+                    Meet Chun's Face Singapore.
+                </h3>
+
+                <div class="Ensign-singapore">
+                    <a href="">
+                        <img src="image/quoc-ky-singapore.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="image/icon/icon-cham-do.png" alt="">
+                        <span>Singapore</span>
+                    </a>
+                </div>
+            </div>
+            <div class="info">
+                <a href="">
+                    <img src="image/image-body-1.jpg" alt="">
+                </a>
+                <h3>
+                    Flight Distance: 4,627 km, 6 hours 10 miinutes<br>
+                    Time difference: 1 hours slower than Korea
+                </h3>
+
+                <a href="">
+                    <img src="image/image-body-2.jpg" alt="">
+                </a>
+                <h3>
+                    Currency : User Singapore Dollar (SGD or S $)<br>
+                    Exchange Rates: SG icons KRW 806 (as of December 2017)
+                </h3>
+
+                <a href="">
+                    <img src="image/image-body-3.jpg" alt="">
+                </a>
+                <h3>
+                    Population: about 5.55 million I Area: about 679 square kilometers<br>
+                    GDP: $ 283.7 billion (based on 2013 IMF)
+                </h3>
+            </div>
+
+            <table class="table">
+                <tr class="tr">
+                    <th>Capital</th>
+                    <td>Singapore</td>
+                </tr>
+
+                <tr class="tr">
+                    <th> Politics</th>
+                    <td>Constitutional Republic, President's six-year term, Prime Minister I</td>
+                </tr>
+
+                <tr class="tr">
+                    <th>Language</th>
+                    <td>Malay, Chinese, English</td>
+                </tr>
+
+                <tr class="tr">
+                    <th>Religion</th>
+                    <td>Islam, Buddhism, Taoism, Christianity, Hinduism</td>
+                </tr>
+
+                <tr class="tr">
+                    <th>Dial</th>
+                    <td>+65</td>
+                </tr>
+
+                <tr class="tr">
+                    <th>Voltage</th>
+                    <td>220 240 V, 3-pin plug</td>
+                </tr>
+
+                <tr class="tr">
+                    <th>Visa</th>
+                    <td>Koreans may enter the country without a visa<br>
+                        for travel purposes</td>
+                </tr>
+
+                <tr class="tr">
+                    <th>Climate</th>
+                    <td>Subtropical climate with high humidity and temperature throughout<br>
+                        the year (averagetemperature: 24-32 , highest in<br>
+                        June-August,with frequent squalls during the<br>
+                        November-season rainy season)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="Recommended-Imformation" class="tabcontent">
+            <h3>Recommended</h3>
+        </div>
+
+        <div id="Useful-Information" class="tabcontent">
+            <h3>Useful</h3>
+        </div>
+    </div>
+    <!-- end tabs -->
+
+    <!-- footer -->
+    <div class="footer-for-mobile">
+    </div>
+    <div class="footer-for-web"></div>
+    <!-- end footer -->
+
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
