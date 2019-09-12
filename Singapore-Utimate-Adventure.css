@@ -6,6 +6,7 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
 }
 
 /* header */
@@ -42,9 +43,8 @@ body {
 .header-bottom-for-mobile{
     overflow: hidden;
     background-image: url(image/background-header-bottom-mobile.png);
-    /* background-size: cover; */
-    /* max-width: 100%; */
-    /* background-position: center; */
+    
+    border-bottom: 2px solid #1e4ede;
 
     background-size: 100% 100%;
     background-position: center center;
@@ -55,6 +55,7 @@ body {
     text-align: left;
     padding-left: 30px;
     padding-top: 63px;
+    padding-bottom: 50px;
     display: block;
 }
 .content-header a{
@@ -67,9 +68,8 @@ body {
     max-width: 100%;
     margin: auto;
 }
-.content-header a.text-header-botom{
+.text-header-botom{
     padding-top: 43px;
-    padding-bottom: 50px;
 }
 /* end header bottom */
 /* end header */
@@ -77,23 +77,24 @@ body {
 /* tabs */
 /* Style tab links */
 .tablinks{
-    /* width: 580px; */
+    /* width: 480px; */
     /* height: 60px; */
     margin: auto;
-    float: center;
+    /* float: center; */
     text-align: center;
     max-width: 100%;
 }
 .tablink {
-    margin: 0;
+    float: center;
     background-color: #e2e1dd;
     color: #3d3d3d;
     border: 2px solid #8b9abd;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
+    margin-right: 0px;
     font-size: 17px;
-    width: 25%;
+    width: 160px;
     text-align: center;
 }
   
@@ -112,17 +113,14 @@ body {
 #Basic-Information {
     background-color: #f5f5f5;
     color: #3d3d3d;
-    border-top: 2px solid #1e4ede !important;
 }
 #Recommended-Imformation {
     background-color: #f5f5f5;
     color: #3d3d3d;
-    border-top: 2px solid #1e4ede;
 }
 #Useful-Information {
     background-color: #f5f5f5;
     color: #3d3d3d;
-    border-top: 2px solid #1e4ede;
 }
 /* content-top */
 .content-top img{
@@ -160,6 +158,7 @@ body {
 
 /* table */
 .table{
+    margin-left: 0;
     margin-top: 76px;
     padding-bottom: 60px;
     border-top: 4px solid #c3c3c3;
@@ -200,6 +199,18 @@ table{
 .icon-header-top{
     display: none;
 }
+
+.line{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.breadcrumb{
+    display: none;
+}
 /* end display none for mobile */
 
 @media only screen and (min-width: 640px){
@@ -208,6 +219,7 @@ table{
         margin: auto;
     }
     /* header */
+    /* header top */
     .topNav-for-mobile{
         overflow: hidden;
         background-color: #002776;
@@ -220,11 +232,115 @@ table{
         display: inherit;
         float: right;
     }
+    /* .icon-header-top{
+        background-color: #ff9f00
+    } */
+    .line{
+        display: inherit;
+        height: 55px;
+        background-color: #002569;
+        text-align: center;
+        line-height: 55px;
+    }
+    .line a{
+        margin-right: 20px;
+    }
     .icon{
         display: none;
     }
-    
+    /* end header-top */
+
+    /* header bottom */
+    .breadcrumb{
+        display: inherit;
+        margin-top: 30px;
+    }
+    .breadcrumb a{
+        padding-right: 10px;
+    }
+    .icon-home{
+        position: absolute;
+    }
+    .icon-mini{
+        text-align: center;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    .header-bottom-for-mobile{
+        /* height: 285px; */
+        overflow: hidden;
+        background-image: url(image/background-header-bottom-pc1.png);
+        background-size: 100% 100%;
+        background-position: center center;
+        position: relative
+    }
+    .hidden{
+        margin-left: 700px;
+        margin-top: -65px;
+        float: right;
+        display: inherit;
+        position: absolute;
+    }
+    .content-header{
+        float: left;
+        text-align: left;
+        padding-left: 0;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: block;
+    }
+    .content-header a{
+        float: right;
+        text-decoration: none;
+        height: auto;
+    }
+    .text-header-botom{
+        text-align: center;
+        width: 350px;
+        height: auto;
+        float: center;
+        padding-left: 40px;
+    }
+
+    .tablinks{
+        float: left;
+    }
+    .tablink {
+        width: 160px;
+        float: left;
+        font-size: 17px;
+    }
+    /* end header bottom */ 
     /* end header */
+
+    /* tabs */
+    .Ensign-singapore{
+        margin-top: -190px;
+        width: 257px;
+        text-align: center;
+        float: right;
+    }
+
+    .info{
+        width: 960px;
+        vertical-align: left;
+        float: left;
+    }
+    .img1{
+        width: 320px;
+        float: left;
+    }
+    .img2{
+        width:320px;
+        float: left;
+    }
+    .img3{
+        width: 320px;
+        float: right;
+    }
+    /* tabs */
 
     /* footer */
     .footer-for-mobile{
